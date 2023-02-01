@@ -5,7 +5,7 @@ Read more about this particural VPN setup - URL to be advertised
 
 
 # File structure
-- ec2.tf : Creates EC2 instance.
+- ec2.tf : Creates EC2 instance (just for testing).
 - outputs.tf : This file contains the outputs that are returned after the Terraform script is run - Peer IP addresses for two VPN connections and EC2 instance private IP.
 - provider.tf : This file containts root module of the script which is provider configurations
 - transit.tf : Creates the TGW and the necessary components such as VPN connections, customer gateways, and routing. The script also creates VPN attachments for each of the VPCs which need to be connected to the Transit Gateway.

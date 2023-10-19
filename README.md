@@ -3,7 +3,7 @@ This GitHub repository contains a Terraform script that sets up a Transit Gatewa
 
 
 # File structure
-- outputs.tf : This file contains the outputs that are returned after the Terraform script is run - Peer IP addresses for two VPN connections and EC2 instance private IP.
+- outputs.tf : This file contains the outputs that are returned after the Terraform script is run - Peer IP addresses for two VPN connections.
 - provider.tf : This file containts root module of the script which is provider configurations
 - transit.tf : Creates the TGW and the necessary components such as VPN connections and routing. The script also creates VPN attachments for each of the VPCs which need to be connected to the Transit Gateway.
 - vars.tf : This file contains the values for the variables that are used in the script - VPN parameteres, VPC settings etc.

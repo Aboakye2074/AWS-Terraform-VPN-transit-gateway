@@ -11,7 +11,7 @@ resource "aws_subnet" "lab-subnet-prv" {
   vpc_id                  = aws_vpc.lab-vpc-1.id
   cidr_block              = var.private_subnets[0]
   map_public_ip_on_launch = "false"
-  availability_zone       = "${var.AWS_REGION}a"
+  availability_zone       = "us-east-2a"
 
   tags = {
     Name = "lab-subnet-prv"

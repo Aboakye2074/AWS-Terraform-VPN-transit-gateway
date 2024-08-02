@@ -1,7 +1,3 @@
-variable "AWS_REGION" {
-  default = "us-east-1"
-}
-
 variable "vpc_cidr" {
   type    = string
   default = "100.64.0.0/23"
